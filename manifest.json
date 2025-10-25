@@ -1,0 +1,16 @@
+{
+  "name": "AI Bayan – TSK4 Edition",
+  "short_name": "AI Bayan",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#001B44",
+  "theme_color": "#001B44",
+  "description": "Interactive English learning app for Kazakhstan students (Modules 1–4, 16 lessons)",
+  "icons": [
+    {
+      "src": "assets/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
