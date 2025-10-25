@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#001B44",
   "theme_color": "#001B44",
-  "description": "Interactive English learning app for Kazakhstan students (Modules 1–4, 16 lessons)",
+  "description": "Interactive English learning app (Modules 1–4, 16 lessons)",
   "icons": [
     {
       "src": "assets/icon512.png",
