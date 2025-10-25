@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Module 2 — My School / Модуль 2 — Моя школа</title>
+
+<style>
+  :root{ --bg:#001B44; --gold:#FFD700; --light:#9ad2ff; --btn:#0a2a6a; }
+  body{ margin:0; padding:0; font-family:'Segoe UI',system-ui,-apple-system,Arial;
+        color:white; background-color:var(--bg);
+        background-image:url('assets/background_glow.jpg'); background-size:cover; background-attachment:fixed; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:40px 20px;}
+  header{ display:flex; align-items:center; gap:18px; margin-bottom:24px;}
+  header h1{ color:var(--gold); text-shadow:0 0 18px #00BFFF; margin:0;}
+  .card{ background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.12);
+         border-radius:18px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,0.35);
+         backdrop-filter: blur(4px); }
+  .grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));}
+  .btn{ display:inline-block; padding:14px 18px; border-radius:14px; text-decoration:none;
+        color:white; background:linear-gradient(180deg,var(--btn), #041a46); border:1px solid rgba(255,255,255,0.15);
+        box-shadow:0 0 0 rgba(0,191,255,0), 0 0 0 rgba(255,215,0,0);
+        transition: transform .15s ease, box-shadow .2s ease; }
+  .btn:hover{ transform:translateY(-2px); box-shadow:0 0 22px rgba(0,191,255,.45), 0 0 12px rgba(255,215,0,.35);}
+  .gold{ color:var(--gold) }
+  footer{ margin-top:28px; color:#cfe7ff80; font-size:14px; text-align:center}
+  .lesson{ background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.15); border-radius:16px; padding:16px; margin:12px 0;}
+  .lesson h3{ margin:6px 0 10px 0; color:var(--gold) }
+  .pill{ display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.18); background:rgba(10,42,106,.55); margin-right:8px;}
+  .toolbar{ display:flex; gap:10px; flex-wrap:wrap; margin:8px 0 18px 0;}
+  .back{ margin-top:16px; display:inline-block}
+  .ask{ position:fixed; right:18px; bottom:18px;}
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/logo_girl.png" alt="AI Bayan" width="120" height="90"/>
+      <div>
+        <h1>Module 2 — My School / Модуль 2 — Моя школа</h1>
+        <div>AI Bayan Project 2025</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="grid">
+        
+        <div class="lesson">
+          <h3>Lesson 1 — In the Classroom / Урок 1 — В классе</h3>
+          <div class="toolbar"><span class='pill'><b>classroom</b> — класс</span><span class='pill'><b>board</b> — доска</span><span class='pill'><b>desk</b> — парта</span></div>
+          <p><span class='gold'>EN:</span> This is our classroom. We have desks, a board, and books.</p>
+          <p><span class='gold'>RU:</span> Это наш класс. У нас есть парты, доска и книги.</p>
+          <p><b>✏️ Task:</b> Write 5 objects you see in your classroom.</p>
+        </div>
+        
+        <div class="lesson">
+          <h3>Lesson 2 — School Subjects / Урок 2 — Предметы</h3>
+          <div class="toolbar"><span class='pill'><b>subject</b> — предмет</span><span class='pill'><b>Maths</b> — математика</span><span class='pill'><b>Science</b> — естествознание</span></div>
+          <p><span class='gold'>EN:</span> I like English and Art. My friend likes Maths and Science.</p>
+          <p><span class='gold'>RU:</span> Мне нравятся английский и искусство. Друг любит математику и науку.</p>
+          <p><b>✏️ Task:</b> Write 3 subjects you like and why.</p>
+        </div>
+        
+        <div class="lesson">
+          <h3>Lesson 3 — Our Teachers / Урок 3 — Наши учителя</h3>
+          <div class="toolbar"><span class='pill'><b>teacher</b> — учитель</span><span class='pill'><b>respect</b> — уважать</span><span class='pill'><b>helpful</b> — отзывчивый</span></div>
+          <p><span class='gold'>EN:</span> Our teachers are helpful and kind. We respect them.</p>
+          <p><span class='gold'>RU:</span> Наши учителя отзывчивые и добрые. Мы их уважаем.</p>
+          <p><b>✏️ Task:</b> Write a thank-you sentence for a teacher.</p>
+        </div>
+        
+        <div class="lesson">
+          <h3>Lesson 4 — A School Day / Урок 4 — Школьный день</h3>
+          <div class="toolbar"><span class='pill'><b>break</b> — перемена</span><span class='pill'><b>homework</b> — домашнее задание</span><span class='pill'><b>start</b> — начинаться</span></div>
+          <p><span class='gold'>EN:</span> School starts at eight. We study, play at break, and do homework.</p>
+          <p><span class='gold'>RU:</span> Школа начинается в восемь. Мы учимся, играем на перемене и делаем домашнее задание.</p>
+          <p><b>✏️ Task:</b> Make a timetable for your perfect school day.</p>
+        </div>
+        
+      </div>
+      <a class="btn back" href="index.html">⬅ Back to Modules</a>
+      <a class="btn ask" href="#ask">💬 Ask Bayan</a>
+    </div>
+
+    <footer>Created by Bayan 🩵 • AI Bayan Project 2025</footer>
+  </div>
+</body>
+</html>

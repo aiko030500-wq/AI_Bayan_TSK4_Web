@@ -1,27 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Bayan for TSK4</title>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Bayan – TSK4 • Modules</title>
+
 <style>
-body {
-  background-color: #001B44;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  padding: 40px;
-}
-h1 {
-  color: #FFD700;
-  text-shadow: 0 0 15px #00BFFF;
-}
+  :root{ --bg:#001B44; --gold:#FFD700; --light:#9ad2ff; --btn:#0a2a6a; }
+  body{ margin:0; padding:0; font-family:'Segoe UI',system-ui,-apple-system,Arial;
+        color:white; background-color:var(--bg);
+        background-image:url('assets/background_glow.jpg'); background-size:cover; background-attachment:fixed; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:40px 20px;}
+  header{ display:flex; align-items:center; gap:18px; margin-bottom:24px;}
+  header h1{ color:var(--gold); text-shadow:0 0 18px #00BFFF; margin:0;}
+  .card{ background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.12);
+         border-radius:18px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,0.35);
+         backdrop-filter: blur(4px); }
+  .grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));}
+  .btn{ display:inline-block; padding:14px 18px; border-radius:14px; text-decoration:none;
+        color:white; background:linear-gradient(180deg,var(--btn), #041a46); border:1px solid rgba(255,255,255,0.15);
+        box-shadow:0 0 0 rgba(0,191,255,0), 0 0 0 rgba(255,215,0,0);
+        transition: transform .15s ease, box-shadow .2s ease; }
+  .btn:hover{ transform:translateY(-2px); box-shadow:0 0 22px rgba(0,191,255,.45), 0 0 12px rgba(255,215,0,.35);}
+  .gold{ color:var(--gold) }
+  footer{ margin-top:28px; color:#cfe7ff80; font-size:14px; text-align:center}
+  .lesson{ background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.15); border-radius:16px; padding:16px; margin:12px 0;}
+  .lesson h3{ margin:6px 0 10px 0; color:var(--gold) }
+  .pill{ display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.18); background:rgba(10,42,106,.55); margin-right:8px;}
+  .toolbar{ display:flex; gap:10px; flex-wrap:wrap; margin:8px 0 18px 0;}
+  .back{ margin-top:16px; display:inline-block}
+  .ask{ position:fixed; right:18px; bottom:18px;}
 </style>
+
 </head>
 <body>
-<h1>🌟 AI Bayan – TSK4 Edition 🇬🇧</h1>
-<p>Interactive English learning app (Modules 1–4, 16 lessons)</p>
-<p>Created by Bayan</p>
+  <div class="wrap">
+    <header>
+      <img src="assets/logo_girl.png" alt="AI Bayan" width="120" height="90"/>
+      <div>
+        <h1>🌟 AI Bayan – TSK4 Edition 🇬🇧</h1>
+        <div class="gold">Interactive English learning • 4 Modules • 16 Lessons</div>
+        <div>AI Bayan Project 2025</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <p>Choose a module / Выберите модуль:</p>
+      <div class="grid">
+        <a class="btn" href="module1.html">📘 Module 1 — My Family / Моя семья</a>
+        <a class="btn" href="module2.html">🏫 Module 2 — My School / Моя школа</a>
+        <a class="btn" href="module3.html">🌍 Module 3 — My World / Мой мир</a>
+        <a class="btn" href="module4.html">🎉 Module 4 — Holidays and Fun / Праздники и развлечения</a>
+      </div>
+      <p style="margin-top:16px">Tip: Click a module to see 4 lessons with EN+RU texts, vocabulary, and a task.</p>
+    </div>
+
+    <footer>Created by Bayan 🩵 • AI Bayan Project 2025</footer>
+  </div>
 </body>
 </html>

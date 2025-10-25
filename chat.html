@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Bayan Chat 💬</title>
+<style>
+  body {
+    background-color: #001B44;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('assets/background_glow.jpg');
+    background-size: cover;
+    margin: 0; padding: 0;
+  }
+  .wrap {max-width: 900px; margin: 0 auto; padding: 30px;}
+  header {display:flex; align-items:center; gap:15px;}
+  header h1 {color: #FFD700; text-shadow: 0 0 15px #00BFFF;}
+  #chatbox {height: 500px; overflow-y: auto; background: rgba(0,0,0,0.35);
+             border-radius: 14px; padding: 15px; margin-top: 20px;}
+  .user, .bayan {padding: 10px 14px; border-radius: 12px; margin: 8px 0; max-width: 70%;}
+  .user {background: #0a2a6a; align-self: flex-start;}
+  .bayan {background: rgba(255,215,0,0.2); border:1px solid #FFD700; align-self: flex-end;}
+  .bayan b {color: #FFD700;}
+  .input-area {display:flex; margin-top: 15px;}
+  input {flex:1; padding:10px; border-radius:8px; border:none;}
+  button {padding:10px 16px; background:#0a2a6a; color:white; border:none; border-radius:8px; margin-left:8px;}
+  button:hover {background:#113d9d; cursor:pointer;}
+  footer {text-align:center; margin-top:20px; color:#9ad2ff80;}
+  .btn {display:inline-block; margin-top:10px; color:white; background:#0a2a6a; padding:10px 14px; border-radius:10px; text-decoration:none;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/logo_girl.png" width="100" height="80"/>
+      <div>
+        <h1>💬 AI Bayan Chat Room</h1>
+        <div>Practice English with your AI friend 🇬🇧</div>
+      </div>
+    </header>
+
+    <div id="chatbox">
+      <div class="bayan"><b>Bayan 🇬🇧:</b> Hello! I'm AI Bayan. Let's talk in English!<br><i>Привет! Я AI Bayan. Давай поговорим по-английски!</i></div>
+    </div>
+
+    <div class="input-area">
+      <input id="userInput" type="text" placeholder="Type your message..." onkeydown="if(event.key==='Enter') sendMessage()" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <a class="btn" href="index.html">⬅ Back to Modules</a>
+    <footer>Created by Bayan 🩵 • AI Bayan Project 2025</footer>
+  </div>
+
+<script>
+  const chatbox = document.getElementById('chatbox');
+
+  function addMessage(text, sender) {
+    const msg = document.createElement('div');
+    msg.classList.add(sender);
+    msg.innerHTML = text;
+    chatbox.appendChild(msg);
+    chatbox.scrollTop = chatbox.scrollHeight;
+  }
+
+  function sendMessage() {
+    const input = document.getElementById('userInput');
+    const text = input.value.trim();
+    if (!text) return;
+    addMessage(text, 'user');
+    input.value = '';
+    setTimeout(() => replyFromBayan(text), 600);
+  }
+
+  function replyFromBayan(userText) {
+    const text = userText.toLowerCase();
+    let reply = "";
+    if (text.includes('hello') || text.includes('hi')) {
+      reply = "Hello! How are you today? 😊<br><i>Привет! Как ты сегодня?</i>";
+    } else if (text.includes('family')) {
+      reply = "Family is very important! Who is in your family?<br><i>Семья очень важна! Кто в твоей семье?</i>";
+    } else if (text.includes('school')) {
+      reply = "School is a place to learn and meet friends.<br><i>Школа — место, где мы учимся и встречаем друзей.</i>";
+    } else if (text.includes('pet')) {
+      reply = "Pets make us happy! Do you have one?<br><i>Питомцы делают нас счастливыми! У тебя есть питомец?</i>";
+    } else if (text.includes('kazakhstan')) {
+      reply = "Kazakhstan is a beautiful country! I love its nature.<br><i>Казахстан — прекрасная страна! Я люблю её природу.</i>";
+    } else if (text.includes('holiday') || text.includes('fun')) {
+      reply = "Holidays are great for spending time with family.<br><i>Праздники — это отличное время для семьи.</i>";
+    } else {
+      reply = "Let's learn this word together! ✨<br><i>Давай выучим это слово вместе!</i>";
+    }
+    addMessage("<b>Bayan 🇬🇧:</b> " + reply, 'bayan');
+  }
+</script>
+</body>
+</html>

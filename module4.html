@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Module 4 — Holidays and Fun / Модуль 4 — Праздники и развлечения</title>
+
+<style>
+  :root{ --bg:#001B44; --gold:#FFD700; --light:#9ad2ff; --btn:#0a2a6a; }
+  body{ margin:0; padding:0; font-family:'Segoe UI',system-ui,-apple-system,Arial;
+        color:white; background-color:var(--bg);
+        background-image:url('assets/background_glow.jpg'); background-size:cover; background-attachment:fixed; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:40px 20px;}
+  header{ display:flex; align-items:center; gap:18px; margin-bottom:24px;}
+  header h1{ color:var(--gold); text-shadow:0 0 18px #00BFFF; margin:0;}
+  .card{ background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.12);
+         border-radius:18px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,0.35);
+         backdrop-filter: blur(4px); }
+  .grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));}
+  .btn{ display:inline-block; padding:14px 18px; border-radius:14px; text-decoration:none;
+        color:white; background:linear-gradient(180deg,var(--btn), #041a46); border:1px solid rgba(255,255,255,0.15);
+        box-shadow:0 0 0 rgba(0,191,255,0), 0 0 0 rgba(255,215,0,0);
+        transition: transform .15s ease, box-shadow .2s ease; }
+  .btn:hover{ transform:translateY(-2px); box-shadow:0 0 22px rgba(0,191,255,.45), 0 0 12px rgba(255,215,0,.35);}
+  .gold{ color:var(--gold) }
+  footer{ margin-top:28px; color:#cfe7ff80; font-size:14px; text-align:center}
+  .lesson{ background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.15); border-radius:16px; padding:16px; margin:12px 0;}
+  .lesson h3{ margin:6px 0 10px 0; color:var(--gold) }
+  .pill{ display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.18); background:rgba(10,42,106,.55); margin-right:8px;}
+  .toolbar{ display:flex; gap:10px; flex-wrap:wrap; margin:8px 0 18px 0;}
+  .back{ margin-top:16px; display:inline-block}
+  .ask{ position:fixed; right:18px; bottom:18px;}
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/logo_girl.png" alt="AI Bayan" width="120" height="90"/>
+      <div>
+        <h1>Module 4 — Holidays and Fun / Модуль 4 — Праздники и развлечения</h1>
+        <div>AI Bayan Project 2025</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="grid">
+        
+        <div class="lesson">
+          <h3>Lesson 1 — Food and Traditions / Урок 1 — Еда и традиции</h3>
+          <div class="toolbar"><span class='pill'><b>holiday</b> — праздник</span><span class='pill'><b>tradition</b> — традиция</span><span class='pill'><b>tasty</b> — вкусный</span></div>
+          <p><span class='gold'>EN:</span> On holidays we cook tasty food and meet family.</p>
+          <p><span class='gold'>RU:</span> В праздники мы готовим вкусную еду и встречаемся с семьёй.</p>
+          <p><b>✏️ Task:</b> Write about your favorite holiday dish.</p>
+        </div>
+        
+        <div class="lesson">
+          <h3>Lesson 2 — Games and Sports / Урок 2 — Игры и спорт</h3>
+          <div class="toolbar"><span class='pill'><b>game</b> — игра</span><span class='pill'><b>sport</b> — спорт</span><span class='pill'><b>healthy</b> — здоровый</span></div>
+          <p><span class='gold'>EN:</span> We play games and do sports to be healthy and happy.</p>
+          <p><span class='gold'>RU:</span> Мы играем и занимаемся спортом, чтобы быть здоровыми и счастливыми.</p>
+          <p><b>✏️ Task:</b> List three games you like with friends.</p>
+        </div>
+        
+        <div class="lesson">
+          <h3>Lesson 3 — Birthday Party / Урок 3 — День рождения</h3>
+          <div class="toolbar"><span class='pill'><b>party</b> — праздник</span><span class='pill'><b>wish</b> — желание</span><span class='pill'><b>dance</b> — танцевать</span></div>
+          <p><span class='gold'>EN:</span> At my party we sing, dance, and make wishes.</p>
+          <p><span class='gold'>RU:</span> На моём празднике мы поём, танцуем и загадываем желания.</p>
+          <p><b>✏️ Task:</b> Plan a birthday party: 3 activities.</p>
+        </div>
+        
+        <div class="lesson">
+          <h3>Lesson 4 — Family Time / Урок 4 — Семейное время</h3>
+          <div class="toolbar"><span class='pill'><b>together</b> — вместе</span><span class='pill'><b>weekend</b> — выходные</span><span class='pill'><b>walk</b> — прогулка</span></div>
+          <p><span class='gold'>EN:</span> We watch films and go for walks together on weekends.</p>
+          <p><span class='gold'>RU:</span> По выходным мы вместе смотрим фильмы и гуляем.</p>
+          <p><b>✏️ Task:</b> Write 4 sentences about your family time.</p>
+        </div>
+        
+      </div>
+      <a class="btn back" href="index.html">⬅ Back to Modules</a>
+      <a class="btn ask" href="#ask">💬 Ask Bayan</a>
+    </div>
+
+    <footer>Created by Bayan 🩵 • AI Bayan Project 2025</footer>
+  </div>
+</body>
+</html>
